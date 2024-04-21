@@ -16,7 +16,7 @@ namespace ARANDA.EJ1.CAI
         {
             List<Usuarios> listaUsarios = new List<Usuarios>();
             listaUsarios.Add(a);
-            MessageBox.Show("Usuario agregado exitosamente");
+            MessageBox.Show("Usuario agregado exitosamente a la lista");
 
         }
 
