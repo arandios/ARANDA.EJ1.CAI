@@ -12,13 +12,13 @@ namespace ARANDA.EJ1.CAI
 {
     class Modelo
     {
+        List<Usuarios> listaUsarios = new List<Usuarios>();
         public void Agregado(Usuarios a)
-        {
-            List<Usuarios> listaUsarios = new List<Usuarios>();
+        {         
             listaUsarios.Add(a);
             MessageBox.Show("Usuario agregado exitosamente a la lista");
-
         }
 
+       
     }
 }

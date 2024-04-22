@@ -20,7 +20,7 @@ namespace ARANDA.EJ1.CAI
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-           if (string.IsNullOrEmpty(txtNombre.Text) || string.IsNullOrEmpty(txtApellido.Text) ||
+            if (string.IsNullOrEmpty(txtNombre.Text) || string.IsNullOrEmpty(txtApellido.Text) ||
                 string.IsNullOrEmpty(txtDNI.Text) || string.IsNullOrEmpty(txtNacimiento.Text))
             {
                 MessageBox.Show("No puede dejar campos sin completar");
