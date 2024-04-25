@@ -56,8 +56,7 @@ namespace ARANDA.EJ1.CAI
                 MessageBox.Show("Ingresó un precio invalido."); return;
             }
 
-            ModeloAutos b = new ModeloAutos();
-          
+            ModeloAutos b = new ModeloAutos();        
             Auto a = new Auto();
            
             a.Marca = lstMarcas.SelectedItem.ToString();
@@ -66,7 +65,16 @@ namespace ARANDA.EJ1.CAI
             a.Precio = precio;
            
             b.Validar(a);
+            Limpiar();
             
+        }
+
+        private void Limpiar()
+        {
+            txtAño.Text = "";
+            txtModelo.Text = "";
+            txtPrecio.Text = "";
+            lstMarcas.SelectedItem = 0;
         }
     }
 }
